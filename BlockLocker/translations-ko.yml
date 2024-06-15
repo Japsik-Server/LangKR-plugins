@@ -1,17 +1,15 @@
 command:
-  cannot_be_used_by_console: This command cannot be used by the console. Sorry!
-  cannot_edit_owner: '&4You cannot change the owner of the protection. Destroy the
-    sign instead.'
+  cannot_be_used_by_console: 이 명령어는 콘솔에서 사용할 수 없습니다!
+  cannot_edit_owner: '&4당신은 소유자를 변경할 권한이 없습니다. 표지판을 제거하고 다시 설치하세요.'
   line_number_out_of_bounds: '&4Please enter a line number between 2 and 4, inclusive.'
-  no_permission: '&4You don''t have permission to execute this command. Sorry!'
+  no_permission: '&4이 명령어를 사용할 권한이 없습니다.'
   no_sign_selected: '&4You must select a sign on one of your protected blocks first
     by right-clicking it.'
-  player_name_too_long: '&4The player name is over 16 characters, which doesn''t fit
-    on the sign. It is also longer than Mojang allows player names to be.'
-  plugin_reloaded: '&6Reloaded the configuration files!'
+  player_name_too_long: '&4플레이어 닉네임이 16자 보다 깁니다.'
+  plugin_reloaded: '&6설6설정 파일을 리로드하였습니다!'
   sign_no_longer_part_of_protection: '&4The selected sign no longer belongs to a protected
     block.'
-  updated_sign: '&6Updated the sign!'
+  updated_sign: '&6표지판을 수정했습니다!'
 protection:
   add_more_users_sign_instead: '&4There can only be one [Private] sign on a protection.
     Add a [More Users] sign instead.'
@@ -29,11 +27,11 @@ protection:
   not_nearby: '&4There is no protectable block nearby. (Shift-)right-click a container
     with a sign in your hand to protect it.'
 tag:
-  everyone: Everyone
-  more_users: '[More Users]'
-  private: '[Private]'
-  redstone: Redstone
-  timer: Timer
+  everyone: 모두
+  more_users: '[추가 유저]'
+  private: '[보호]'
+  redstone: 레드스톤
+  timer: 타이머
 updater:
   more_information: '&6More information: {0}'
   unsupported_server: '&4The latest version of BlockLocker (version {0}) no longer
