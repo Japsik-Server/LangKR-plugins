@@ -21,9 +21,9 @@ general:
     land: '&8[&2{land}&8]'
     nation: '&8[&9{nation} &8|&2 {land}&8]'
   relation:
-    ally: '&a동맹국'
+    ally: '&a동맹'
     enemy: '&c적'
-    neutral: '&7중립국'
+    neutral: '&7중립'
   land:
     title:
       land: '&7%level% &7of&3 %owner%&7.'
@@ -254,40 +254,40 @@ general:
         accepted: '&7We''re no longer enemies to {0}&7.'
   wars:
     object:
-      enemy: '&cEnemy'
-      ally: '&aAlly'
+      enemy: '&c적'
+      ally: '&a동맹'
     nametag:
-      enemy: '&cENEMY &8| '
-      ally: '&aALLY &8| '
+      enemy: '&c적 &8| '
+      ally: '&a동맹 &8| '
     state:
-      preparation: '&aPreparation'
-      fight: '&cFight'
+      preparation: '&a준비'
+      fight: '&c교전'
   command:
     argument:
       optional: '&8[&e{arg}&8]'
       required: '&8<&e{arg}&8>'
       type:
-        land: land
-        nation: nation
-        cmd: cmd
-        area: area
-        player: player
-        name: name
-        number: number
-        confirm: confirm
+        land: 도시
+        nation: 국가
+        cmd: 명령어
+        area: 역역
+        player: 플레이어
+        name: 이름
+        number: 숫자
+        confirm: 확인
         funds: funds
-        menu: menu
-        world: world
+        menu: 메뉴
+        world: 월드
         args: arguments
-        page: page
-        database: database
+        page: 페이지
+        database: 데이터베이스
         holder: land | nation
-        plugin: plugin
-        role: role
-        flag: flag
-        radius: radius
+        plugin: 플러그인
+        role: 역할
+        flag: 규칙
+        radius: 범위
         context: context
-        boolean: true | false
+        boolean: 예 | 아니오
         flag_or_all: flag | all
         amount: amount
         tribute: tribute
@@ -295,11 +295,11 @@ general:
         y-max: y-max
         silent: silent
         sorting: sorting
-        preparation_time: preparation time
-        category: category
-        ally: ally
-        enemy: enemy
-        here: here
+        preparation_time: 준비 시간
+        category: 카테고리
+        ally: 동맹
+        enemy: 적
+        here: 여기
 
 
 help:
