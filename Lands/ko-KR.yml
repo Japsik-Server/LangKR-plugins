@@ -181,14 +181,14 @@ general:
       position: '&7이곳은 현재 당신의 위치입니다.'
   inbox:
     general:
-      created: '&7Land {0} &7created.'
-      renamed: '&7{0} changed the name from {1} to {2}.'
+      created: '&7{0} &7도시가 생성되었습니다.'
+      renamed: '&7{0} 이름을 {1} 에서 {2} 으로 수정하였습니다.'
       post: '{0}:&7 {1}'
     member:
-      join: '&7Player {0} joined.'
-      leave: '&7Player {0} left.'
-      ban: '&cPlayer {0} has been banned.'
-      owner: '&7Player {0} is now the new owner.'
+      join: '&7{0} 님이 참가하였습니다.'
+      leave: '&7{0} 님이 나갔습니다.'
+      ban: '&c{0} 님이 차단되었습니다.'
+      owner: '&7{0} 님이 이제 새 소유자입니다.'
     economy:
       upkeep:
         alert:
@@ -204,12 +204,12 @@ general:
         nation: '&cNation {0}&c failed to pay the upkeep of {1}, from their capitals
           balance, and has been deleted.'
       bank:
-        withdraw: '&cPlayer {0} withdrew {1}. New balance: {2}'
-        deposit: '&7Player {0} deposited {1}. New balance: {2}'
+        withdraw: '&c{0} 님이 {1} 을 출금했습니다. 현재 자산: {2}'
+        deposit: '&7{0} 님이 {1} 을 입금했습니다. 현재 자산: {2}'
       taxes:
-        warning: '&cPlayer {0} couldn''t pay taxes.'
-        untrusted: '&cPlayer {0} couldn''t pay taxes. They''re now untrusted.'
-        received: '&7Received total of {0} taxes from land members. New balance: {1}'
+        warning: '&c플레이어 {0} 님은 세금을 낼 수 없습니다.'
+        untrusted: '&c플레이어 {0} 님은 세금을 낼 수 없습니다. 그들은 이제 신뢰되지 않습니다.'
+        received: '&7거주자들에게 {0} 의 세금을 걷었습니다. 현재 자산: {1}'
     war:
       shield: '&7Received additional war shield time of {0}&7. Total: {1}'
       start: '&7The war against {0} &7has started. Timeout:&5 {1}'
@@ -231,14 +231,14 @@ general:
           &7They had&3 {2} &7points. The war took &5{3}&7.'
     nation:
       general:
-        created: '&7Nation {0} &7created.'
+        created: '&7{0} &7국가가 생성되었습니다.'
       member:
-        join: '&7Land {0} joined.'
-        leave: '&7Land {0} left.'
+        join: '&7{0} &7도시가 참여했습니다.'
+        leave: '&7{0} &7도시가 나갔습니다.'
       economy:
         upkeep:
-          warning: '&cCouldn''t pay the upkeep cost of {0}.'
-          paid: '&7Paid upkeep cost: - {0}'
+          warning: '&c{0} 의 유지비용을 낼 수 없습니다!'
+          paid: '&7결제한 유지비용: - {0}'
         taxes:
           warning: '&cLand {0} couldn''t pay taxes.'
           untrusted: '&cLand {0} couldn''t pay taxes. They were removed.'
