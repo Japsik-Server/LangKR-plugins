@@ -8,52 +8,52 @@
 general:
   prefix:
     normal: '&8[&2Lands&8] '
-    help: '&8[&2Lands&8] &7Usage: '
-  wYes: '&aYes'
-  wNo: '&cNo'
+    help: '&8[&2Lands&8] &7사용법: '
+  wYes: '&a예'
+  wNo: '&c아니오'
   value:
-    none: '&8None'
-    unlimited: '&aunlimited'
-  disabled: '&cDisabled'
-  wilderness: '&aWilderness'
-  server: Server
+    none: '&8지정되지 않음'
+    unlimited: '&a무제한'
+  disabled: '&c비활성화됨'
+  wilderness: '&a황무지'
+  server: 서버
   affiliation:
     land: '&8[&2{land}&8]'
     nation: '&8[&9{nation} &8|&2 {land}&8]'
   relation:
-    ally: '&aAlly'
-    enemy: '&cEnemy'
-    neutral: '&7Neutral'
+    ally: '&a동맹국'
+    enemy: '&c적'
+    neutral: '&7중립국'
   land:
     title:
       land: '&7%level% &7of&3 %owner%&7.'
-      camp: '&7Camp of&3 %owner%&7.'
-      admin: '&7This land belongs to the server.'
-    default-area: Default
+      camp: '&3%owner%&7님의 캠프.'
+      admin: '&7이 도시는 관리자가 소유합니다.'
+    default-area: 기본
   area:
     description:
       default: '&7New claims will belong to this area.'
       sub: '&7This is a subarea, which can have special flags and members.'
-      rented: '&aThis area is rented by player {player}.'
-      sold: '&aThis area is sold to player {player}.'
+      rented: '&a이 구역은 {player}님이 렌트하셨습니다.'
+      sold: '&a{player}이 구역은 {player}님에게 판매되었습니다.'
   time:
-    days: day(s)
-    hours: hour(s)
-    minutes: minute(s)
-    seconds: second(s)
+    days: 일
+    hours: 시간
+    minutes: 분
+    seconds: 초
   status:
-    online: '&aonline'
-    offline: '&coffline'
+    online: '&a온라인'
+    offline: '&c오프라인'
   top:
     hologram:
       land:
-        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Lands &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 도시 &8(&7전체: {total}&8) &7&m━>━━━━━━━━━━━━━━'
         entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
-        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Lands &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 도시 &8(&7전체: {total}&8) &7&m━>━━━━━━━━━━━━━━'
       nation:
-        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Nations &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 국가 &8(&7전체: {total}&8) &7&m━>━━━━━━━━━━━━━━'
         entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
-        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Nations &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 국가 &8(&7전체: {total}&8) &7&m━>━━━━━━━━━━━━━━'
   integration:
     dynmap:
       land:
@@ -112,29 +112,28 @@ general:
       land:
         description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
           200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
-          <ul> <li class="\&quot;infowindow\&quot;">Level: {level}</li> <li class="\&quot;infowindow\&quot;">Balance:
-          {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li>
-          <li class="\&quot;infowindow\&quot;">Players ({members_amount}): {members}</li>
+          <ul> <li class="\&quot;infowindow\&quot;">자산:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">청크: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">플레이어 ({members_amount}): {members}</li>
           </ul>'
         spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
-          style="color: {land_color};">Spawnpoint</span></span></div> <div class="\&quot;infowindow\&quot;"><br
-          />Open to untrusted: {public}</div> <ul> <li>If this spawn is open to untrusted,
-          anyone can teleport to it by executing /lands spawn {land}.</li> </ul>'
+          style="color: {land_color};">스폰포인트</span></span></div> <div class="\&quot;infowindow\&quot;"><br
+          />신뢰되지 않는 이에게 공개: {public}</div> <ul> <li>만약 이 스폰이 신뢰되지 않는 이에게 공개된다면,
+          아무나 /lands spawn {land} 명령어로 텔레포트 할 수 있습니다.</li> </ul>'
       nation:
         description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
           200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
-          <ul> <li class="\&quot;infowindow\&quot;">Level: {level}</li> <li class="\&quot;infowindow\&quot;">Balance:
-          {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li>
-          <li class="\&quot;infowindow\&quot;">Players ({members_amount}): {members}</li>
-          </ul> <p><strong>This land belongs to nation {nation}:</strong></p> <ul>
-          <li>Level: {level_nation}</li> <li>Capital: {capital}</li> <li>Lands (total
-          players: {members_amount_nation}): {lands}</li> </ul>'
+          <ul> <li class="\&quot;infowindow\&quot;">자산:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">청크: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">플레이어 ({members_amount}): {members}</li>
+          </ul> <p><strong>이 도시는 {nation} 국가에 속합니다:</strong></p> <ul>
+          <li>수도: {capital}</li> <li>Lands (전체 플레이어: {members_amount_nation}): {lands}</li> </ul>'
       capital:
         spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
-          style="color: {land_color};">Capitals Spawnpoint</span><br /></span>This
-          spawn belongs to the capital of nation {nation}.</div><div class="\&quot;infowindow\&quot;"><br
-          />Open to untrusted: {public}</div><ul><li>If this spawn is open to untrusted,
-          anyone can teleport to it by executing /lands spawn {land}.</li></ul>'
+          style="color: {land_color};">수도의 스폰포인트</span><br /></span>이
+          스폰포인트는 {nation} 국가 수도의 스폰포인트에 속합니다.</div><div class="\&quot;infowindow\&quot;"><br
+          />신뢰되지 않는 이에게 공개: {public}</div><ul><li>만약 이 스폰이 신뢰되지 않는 이에게 공개된다면,
+          아무나 /lands spawn {land} 명령어로 텔레포트 할 수 있습니다.</li></ul>'
     pl3xmap:
       land:
         description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
@@ -169,20 +168,17 @@ general:
     others: '&c▉ '
     position: '&9▉ '
     info:
-      wilderness: ' &2▉ &7= Wilderness'
-      yours: ' &a▉ &7= Yours'
-      trusted: ' &e▉ &7= Trusted'
-      others: ' &c▉ &7= Others'
-      position: ' &9▉ &7= Position'
+      wilderness: ' &2▉ &7= 황무지'
+      yours: ' &a▉ &7= 당신의'
+      trusted: ' &e▉ &7= 신뢰됨'
+      others: ' &c▉ &7= 기타 '
+      position: ' &9▉ &7= 위치'
     hover:
-      wilderness: '&7This chunk is wilderness. Click to claim it.'
-      yours: '&7This land is owned by you. Click to show information about land&3
-        {land}&7.'
-      trusted: '&7You''re trusted in this land. Click to show information about land&3
-        {land}&7.'
-      others: '&7You''re not trusted in this land. Click to show information about
-        land&3 {land}&7.'
-      position: '&7This is your current position.'
+      wilderness: '&7이 청크는 황무지입니다. 클릭 해 소유하세요.'
+      yours: '&7이 도시는 당신이 소유하고 있습니다. 클릭 해&3 {land}&7 도시의 정보를 확인하세요.'
+      trusted: '&7당신은 이 도시에 신뢰되어 있습니다. 클릭 해&3 {land}&7 도시의 정보를 확인하세요.'
+      others: '&7당신은 이 도시에 신뢰되지 않습니다. 클릭 해&3 {land}&7 도시의 정보를 확인하세요.'
+      position: '&7이곳은 현재 당신의 위치입니다.'
   inbox:
     general:
       created: '&7Land {0} &7created.'
