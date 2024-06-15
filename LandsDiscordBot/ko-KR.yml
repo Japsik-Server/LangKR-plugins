@@ -1,0 +1,92 @@
+# Here you can edit all chat messages.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.gg/B4MAJVk
+#
+# Wiki: https://github.com/Angeschossen/General/wiki/Messages
+
+general:
+  prefix:
+    normal: '[Lands] '
+  
+  channel:
+    land: Use **/lands chat [land] <message>** ingame to chat with your land members
+      on Discord. With **/lands inbox** in this Discord server, you can see the inbox
+      of your land in this channel.
+    nation: Use **/nations chat [nation] <message>** ingame to chat with your nation
+      members on Discord. With **/nations inbox** in this Discord server, you can
+      see the inbox of your nation in this channel.
+  
+  inbox:
+    title: Inbox
+  
+  top:
+    title: 'Top: {sorting}'
+  
+  help:
+    inbox: View the inbox of your land or nation
+    top: View top lands or nations
+    channel:
+      main: Manage the chat channel of your land or nation.
+      create: Create a land or nation chat channel.
+      delete: Delete the land or nation chat channel.
+  
+  command:
+    argument:
+      optional: '&8<&e{arg}&8>'
+      required: '&8[&e{arg}&8]'
+      type:
+        cmd: cmd
+
+help:
+  help:
+    root:
+      header: '[NoPrefix][T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to
+        the previous page.[/H][C]{cmd} {previous}[/C][/T] &2LandsDiscordBot Commands
+        &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Click here to
+        go to the next page.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &2LandsDiscordBot Commands &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+    sub:
+      unknown: |
+        &cThe subcommand&4 {command} &cdoesn't exist.
+          [T]&7✖ View commands: &3/{cmd} &8[CLICK][H]&7Click here to get a list of available commands[/H][C]{cmd}[/C][/T]
+      header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate
+        to the previous page.[/H][C]{cmd} {previous}[/C][/T] &2Sub Commands &7Page&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go to
+        the next page.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &2Sub Commands &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+  command:
+    landsdiscordbot:
+      admin:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Admin commands[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+        reload: '[T]&e{parent} {subcmd} &8- &7Reload config and messages[H]&7Click
+          to execute.[/H][C]{fullcmd}[/C][/T]'
+        about: '[T]&e{parent} {subcmd} &8- &7Show information about Lands[H]&7Click
+          to execute.[/H][C]{fullcmd}[/C][/T]'
+
+landsdiscordbot:
+  command:
+    general:
+      not-exist: A land or nation with the name **{object}** doesn't exist. Typo?
+      not-linked: You haven't linked your Discord account with your Minecraft account
+        yet. Use **{usage}** ingame to link your account.
+      chat-channel: This command needs to be executed in a chat channel.
+    
+    channel:
+      owner: Only the owner **{player}** of **{object}** can do this. Your linked
+        player **{player}** isn't the owner.
+      create:
+        max: This server reached the maximum amount of **{max}** channels. This can
+          be edited in config.
+        already: 'You already created a channel for {object} (channel: {channel}).'
+        success: 'Successfully created channel(s) for {object}: **{channel}**'
+      delete:
+        success: Successfully deleted the channel(s) of {object}.
+    top:
+      no-lands: Currently there aren't any top lands to show.

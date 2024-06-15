@@ -1,0 +1,126 @@
+# 커스터마이징 및 번역을 단순화하기 위해 편집기를 확인해보세요: https://ptp.pcgamingfreaks.at
+
+Language:
+  NotFromConsole: "&c콘솔에서 이 명령어를 사용할 수 없습니다."
+  Ingame:
+    NoPermission: "&c이 작업을 수행할 권한이 없습니다."
+    WorldDisabled: "&c이 세계에서는 배낭을 사용할 수 없습니다."
+    NaN: "[\"\",{\"text\":\"입력된 값은 숫자가 아닙니다!\",\"color\":\"red\"}]"
+    OwnBackpackClose: "배낭이 닫혔습니다!"
+    OwnBackpackClose_SendMethod: "action_bar"
+    #파라미터: {OwnerName}, {OwnerDisplayName}
+    PlayerBackpackClose: "{OwnerName}의 배낭이 닫혔습니다!"
+    PlayerBackpackClose_SendMethod: "action_bar"
+    InvalidBackpack: "유효하지 않은 배낭입니다."
+    NotAllowedInBackpack: "&c{ItemName}은(는) 배낭에 넣을 수 없습니다."
+    NotAllowedInBackpack_SendMethod: "action_bar"
+    DontRemoveShortcut: "&c배낭 바로가기를 인벤토리에서 제거할 수 없습니다!"
+    DontRemoveShortcut_SendMethod: "action_bar"
+    BackpackShrunk: "&c배낭이 줄어들었습니다! 일부 아이템이 땅에 떨어졌습니다!"
+    Open:
+      #파라미터: {TimeLeft} 재열기까지 남은 시간(초), {TimeSpanLeft} 재열기까지 남은 시간(문자열 형식)
+      Cooldown: "[{\"text\":\"재열기까지 \",\"color\":\"dark_green\"},{\"text\":\"{TimeSpanLeft}\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"{TimeLeft} 초\"}},{\"text\":\" 기다려주세요.\"}]"
+      #파라미터: {CurrentGameMode}, {AllowedGameModes}
+      WrongGameMode: "현재 게임 모드에서는 배낭을 열 수 없습니다."
+    Clean:
+      BackpackCleaned: "배낭이 정리되었습니다."
+      BackpackCleanedBy: "당신의 배낭이 {DisplayName}&r에 의해 정리되었습니다."
+      BackpackCleanedOther: "{DisplayName}&r의 배낭이 정리되었습니다."
+    Sort:
+      Sorted: "배낭이 정리되었습니다."
+    Help:
+      Header: "&6### Minepacks 명령어 ###"
+      Footer: "&6#############################"
+    Reload:
+      Reloading: "&1Minepacks를 다시 로딩 중입니다 ..."
+      Reloaded: "&1Minepacks가 다시 로딩되었습니다!"
+    Update:
+      CheckingForUpdates: "&1업데이트를 확인 중입니다 ..."
+      Updated: "[\"\",{\"text\":\"플러그인이 업데이트되었습니다. 다음 재시작/재로딩 시 적용됩니다.\",\"color\":\"yellow\"}]"
+      NoUpdate: "[\"\",{\"text\":\"플러그인 업데이트가 없습니다.\",\"color\":\"gold\"}]"
+      UpdateFail: "[\"\",{\"text\":\"업데이트 확인 중 문제가 발생했습니다! 콘솔을 확인하세요!\",\"color\":\"red\"}]"
+      # 이 메시지를 변경할 수 있지만, 링크가 더 이상 플러그인으로 연결되지 않아도 책임지지 않습니다!
+      UpdateAvailable: "[{\"text\":\"업데이트가 있습니다! \\\"\",\"color\":\"green\"},{\"text\":\"https://www.spigotmc.org/resources/19286/\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.spigotmc.org/resources/19286/\"}},{\"text\":\"\\\"에서 다운로드하세요!\"}]"
+    Backup:
+      Created: "배낭이 성공적으로 백업되었습니다."
+      NoBackpack: "플레이어에게 배낭이 없거나 배낭이 비어 있습니다."
+    Restore:
+      BackupsPerPage: 10
+      Headline: "[\"\",{\"text\":\"백업\",\"color\":\"yellow\"},{\"text\":\" - \",\"color\":\"white\"},{\"text\":\"페이지 {CurrentPage}/{MaxPage} 표시 중\",\"color\":\"gold\"}]"
+      Footer: "[{\"text\":\"<<< 이전 <<<\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}--\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}--\"}},{\"text\":\" 페이지 {CurrentPage}/{MaxPage} 표시 중 \",\"color\":\"gold\"},{\"text\":\">>> 다음 >>>\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}++\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}++\"}}]"
+      BackupEntry: "[\"\",{\"text\":\"{BackupIdentifier}\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/{MainCommand} {SubCommand} {BackupIdentifier}\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"사용자: {BackupPlayerName} ({BackupPlayerUUID})\\n생성일: {BackupDate}\"}}]"
+      NoValidBackup: "{BackupIdentifier}에 해당하는 유효한 백업이 없습니다."
+      NoUserToRestoreToFound: "백업을 복원할 유효한 사용자를 찾을 수 없습니다."
+      # JSON 없음!!!
+      ParameterBackupName: "백업_이름"
+      # JSON 없음!!!
+      DateFormat: "yyyy.MM.dd HH:mm:ss"
+      Restored: "백업이 성공적으로 복원되었습니다."
+    InventoryClear:
+      UnknownPlayer: "&c플레이어 {Name}을(를) 찾을 수 없습니다!"
+      Cleared: "인벤토리가 정리되었습니다."
+      ClearedOther: "{DisplayName}&r의 인벤토리가 정리되었습니다."
+      ClearedOtherTarget: "당신의 인벤토리가 {DisplayName}&r에 의해 정리되었습니다."
+    Pickup:
+      ToggleOn: "&7자동 아이템 수집이 &a활성화&7되었습니다."
+      ToggleOff: "&7자동 아이템 수집이 &c비활성화&7되었습니다."
+  Commands:
+    HelpFormat: "[\"\",{\"text\":\"/{MainCommand} {SubCommand} {Parameters}\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/{MainCommand} {SubCommand}\"}},{\"text\":\" - \",\"color\":\"white\"},{\"text\":\"{Description}\",\"color\":\"aqua\"}]"
+    PlayerNameVariable: "플레이어_이름"
+    Description:
+      Backpack: "배낭을 엽니다."
+      Sort: "배낭을 정리합니다."
+      Clean: "배낭을 정리합니다."
+      CleanOthers: "다른 플레이어의 배낭을 정리합니다."
+      OpenOthers: "다른 플레이어의 배낭을 표시합니다."
+      Reload: "플러그인의 설정을 다시 로딩합니다."
+      Update: "새 플러그인 업데이트를 확인합니다."
+      Version: "플러그인 및 의존성에 대한 버전 정보를 출력합니다."
+      Backup: "플레이어의 배낭을 백업합니다."
+      BackupEveryone: "현재 온라인 상태인 모든 사람을 백업합니다."
+      Restore: "백업을 복원합니다."
+      RestoreList: "사용 가능한 모든 백업을 나열합니다."
+      Help: "사용 가능한 모든 명령어와 설명을 표시합니다."
+      Migrate: "사용된 데이터베이스를 다른 유형으로 마이그레이션합니다."
+      Pickup: "인벤토리가 가득 찼을 때 자동 수집 상태를 전환합니다."
+
+Command:
+  Backpack:
+    - backpack
+    - bp
+  Open:
+    - open
+  Sort:
+    - sort
+  Clean:
+    - clean
+    - clear
+    - empty
+  Reload:
+    - reload
+    - restart
+  Update:
+    - update
+  Backup:
+    - backup
+  Restore:
+    - restore
+  ListBackups:
+    - listbackups
+  Version:
+    - version
+  Help:
+    - help
+  InventoryClear:
+    - clear
+    - inventoryclear
+    - clean
+  Pickup:
+    - pickup
+
+# Will be shown in the console during startup
+LanguageName: "korean"
+Author: "GeorgH93"
+
+# Language file version. Don't touch it!
+Version: 21

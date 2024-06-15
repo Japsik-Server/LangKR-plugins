@@ -1,0 +1,64 @@
+Plugin:
+  
+  plugin-enabled: '[P]&a 플러그인이 성공적으로 활성화 되었습니다.'
+  plugin-link: '[P]&a Link with&6 %Link%&a successful!'
+  plugin-update: |-
+    [P]&a 새 버전이 나왔습니다!:&6 %NewVersion%&a!
+    [P]&a 현재 버전:&6 %Version%&a!
+    [P]&a 최신 버전 다운로드하기:
+    [P]&6 %Path%
+  plugin-data: '[P]&c A connection to the data storage could not be established. Please check the server console!'
+  plugin-version: '[P]&c The plugin can''t be used with this server version! (&b%Version%&c)'
+  plugin-reload: '[P]&a 플러그인이 성공적으로 새로고침 되었습니다.'
+  plugin-disabled: '[P]&a 플러그인이 성공적으로 비활성화 되었습니다.'
+  plugin-prefix: '&7[&6앉기&7]'
+
+
+
+Messages:
+  
+  command-permission-error: '[P]&c 이 명령어를 사용할 권한이 없습니다!'
+  command-sender-error: '[P]&c 이 명령어를 사용할 수 없습니다!'
+  command-version-error: |-
+    [P]&c 잘못된 서버 버전입니다! (&b%Version%&c)
+    [P]&c 서버를 업그레이드 해 이 기능을 사용하세요!
+  
+  command-gsit-toggle-on: '[P]&a You have enabled&6 sit&a click-interactions.'
+  command-gsit-toggle-off: '[P]&a You have disabled&6 sit&a click-interactions.'
+  command-gsit-playertoggle-on: '[P]&a You have enabled&6 playersit&a click-interactions.'
+  command-gsit-playertoggle-off: '[P]&a You have disabled&6 playersit&a click-interactions.'
+  command-gcrawl-toggle-on: '[P]&a You have enabled&6 crawl&a double-sneak.'
+  command-gcrawl-toggle-off: '[P]&a You have disabled&6 crawl&a double-sneak.'
+  
+  action-sit-now-error: '[P]&c 여기서 앉을 수 없습니다!'
+  action-sit-world-error: '[P]&c 이 월드에서 앉을수 없습니다!'
+  action-sit-location-error: '[P]&c 여기서 앉을 수 없습니다!'
+  action-sit-safe-error: '[P]&c 이곳은 앉기에 안전하지 않습니다!'
+  action-sit-region-error: '[P]&c 이 국가에서 앉을 수 없습니다!'
+  action-sit-kick-error: '[P]&c 이미 다른 사람이 여기 앉아있습니다!'
+  action-sit-info: '&6<lang:key.sneak>&a 키를 눌러 일어날 수 있습니다.'
+  
+  action-playersit-info: '&6<lang:key.sneak>&a 키를 눌러 일어날 수 있습니다.'
+  
+  action-pose-now-error: '[P]&c 지금 포즈를 취할 수 없습니다!'
+  action-pose-world-error: '[P]&c 이 월드에서 포즈를 취할 수 없습니다!'
+  action-pose-location-error: '[P]&c 여기서 포즈를 취할 수 없습니다!'
+  action-pose-safe-error: '[P]&c 이곳은 포즈를 취하기에 안전하지 않습니다!'
+  action-pose-region-error: '[P]&c 이 국가에서 포즈를 취할 수 없습니다!'
+  action-pose-kick-error: '[P]&c 이미 다른 사람이 여기서 포즈를 취하고 있습니다!'
+  action-pose-info: '&6<lang:key.sneak>&a 키를 눌러 일어날 수 있습니다.'
+  
+  action-crawl-now-error: '[P]&c You can''t crawl right now!'
+  action-crawl-world-error: '[P]&c You can''t crawl in this world!'
+  action-crawl-region-error: '[P]&c You can''t crawl in this region!'
+  action-crawl-info: '&6<lang:key.sneak>&a 키를 눌러 일어날 수 있습니다.'
+  
+  action-emote-none-error: '[P]&c You''re not using an emote right now!'
+  action-emote-stop-error: '[P]&c You can''t stop emoting!'
+  action-emote-stop: '[P]&a You stopped emoting.'
+  action-emote-exist-error: '[P]&c The emote&6 %Emote%&c does not exist!'
+  action-emote-now-error: '[P]&c You can''t emote right now!'
+  action-emote-world-error: '[P]&c You can''t emote in this world!'
+  action-emote-region-error: '[P]&c You can''t emote in this region!'
+  
+  action-blocked-error: '[P]&c 이 명령어를 지금 사용할 수 없습니다!'
